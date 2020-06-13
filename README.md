@@ -14,19 +14,19 @@
 
 ### Тест случаи според критериумот Every statement
 
-    Тест 1 user: null, allUsers: null
+    Тест случај 1 user: null, allUsers: null
     Јазли 1, 2, 16
     
-    Тест 2 user: new User(null, null, null), allUsers: null
+    Тест случај 2 user: new User(null, null, null), allUsers: null
     Јазли 1, 3, 4, 16
             
-    Тест 3 user: new User("185034", "password", null), allUsers: new ArrayList<>()
+    Тест случај 3 user: new User("185034", "password", null), allUsers: new ArrayList<>()
     Јазли 1, 3, 5, 6, 16
            
-    Тест 4 user: new User("185034", "password", ""), allUsers: new ArrayList<>()
+    Тест случај 4 user: new User("185034", "password", ""), allUsers: new ArrayList<>()
     Јазли 1, 3, 5, 7, 8.1, 8.2, 13, 14, 16
                    
-    Тест 5 user: new User("185034", "password", "stefan.vasovski@students.finki.ukim.mk"), allUsers: new ArrayList<>()
+    Тест случај 5 user: new User("185034", "password", "stefan.vasovski@students.finki.ukim.mk"), allUsers: new ArrayList<>()
     Јазли 1, 3, 5, 7, 8.1, 8.2, 8.3, 9, 10, 11, 12, 13, 15, 16
 
 ### Тест случаи според критериумот Every path
@@ -75,11 +75,11 @@
 Во методата за тестирање every statement потребно е да се изминат сите линии код со користење на test case-ови.
 Минималниот број на test case-ови за оваа метода го претпоставив од бројот на терминирачки јазли.
 Влезовите на test case-овити ги одредив така што следејќи ја патеката, ги поставив влезовите да одговараат на условите
-на предикатните јазли. Пример влезот за тест 1 го поставив да ги помине јазлите 1, 2, 16. Јазолот 1 е предикатен каде 
+на предикатните јазли. Пример влезот за тест случај 1 го поставив да ги помине јазлите 1, 2, 16. Јазолот 1 е предикатен каде 
 условот за False е user да биде null а вредноста на allUsers е небитна, очекуван излез е exception. Со дебагирање каде breakpoints 
 се сите јазли, ја пополнив табелата и ја потврдив точноста на unit тестот.
 
-Јазел | Тест 1 | Тест 2 | Тест 3 | Тест 4 | Тест 5
+Јазел | Тест случај 1 | Тест случај 2 | Тест случај 3 | Тест случај 4 | Тест случај 5
 ---|:---:|:---:|:---:|:---:|:---:
 1  | * | * | * | * | * 
 2  | * |   |   |   | 
